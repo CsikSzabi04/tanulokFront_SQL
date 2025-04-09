@@ -115,7 +115,7 @@ function App() {
         <div className='fel'> <span className='p'>Osztályok</span></div>
         <div className='als'>
           {osztalyok.map(x =>
-            <div className='belso'>
+            <div className='belsoa'>
               <img src={x.ofokep} /><br />
               {x.ofonev} <br /><br />
               <span className='gomb' onClick={()=>katt(x)} > {x.osztaly}</span>
@@ -123,13 +123,13 @@ function App() {
           )}
         </div>
       </div><br />
-      <div className='osz'>
+      <div className='oszb'>
         <div className='fel'> <span className='p'>Tanulók <span>({fo} fő)</span>  <span style={{fontWeight:"bold", fontSize:"16px"}}>{oszt}</span></span></div>
         <div className='als'>
           {tan.map(x =>
             <div className='belso' onClick={()=>alakit(x)}>
               <img src={x.kep} /><br />
-              <span>{x.nev}</span>
+              <span className='nev'>{x.nev}</span>
             </div>
           )}
         </div>
